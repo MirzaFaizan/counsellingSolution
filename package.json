@@ -1,0 +1,27 @@
+{
+  "name": "authentic_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "express-handlebars": "*",
+    "express-validator": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-flash": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "bcryptjs": "*",
+    "cookie-parser": "*"
+  }
+}
