@@ -236,7 +236,7 @@ function sendToken(userType){
               }
             }).then(function(){
               
-              window.location.href=`http://localhost:3000/dashboard/test`
+              window.location.href=`/dashboard/test`
 
             })
             .catch(error => console.error('Token not seent to route'))
@@ -303,7 +303,7 @@ function logOut(){
               'Content-Type': 'application/json'
             }
           }).then(function(){
-            window.location.href = "http://localhost:3000/"
+            window.location.href = "/"
           }).catch(function(error) {
         // An error happened.
       });
@@ -344,7 +344,7 @@ function signInForm(){
                         }
                       }).then(function(){
                       
-                          window.location.href = `http://localhost:3000/dashboard/Student/${userId}`
+                          window.location.href = `/dashboard/Student/${userId}`
                         
                       })
                       .catch(error => {
