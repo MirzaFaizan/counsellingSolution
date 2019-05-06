@@ -10,18 +10,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
+    "bcryptjs": "*",
     "body-parser": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-flash": "*",
     "express-handlebars": "*",
-    "express-validator": "*",
     "express-messages": "*",
     "express-session": "*",
-    "express-flash": "*",
+    "express-validator": "*",
+    "firebase": "^5.10.0",
+    "firebase-admin": "*",
     "mongoose": "*",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*",
-    "bcryptjs": "*",
-    "cookie-parser": "*"
+    "passport-local": "*"
   }
 }
