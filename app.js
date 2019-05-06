@@ -22,7 +22,7 @@ admin.initializeApp({
   databaseURL: "https://consultingapp-ac5fa.firebaseio.com"
 });
 
-const port=3000;
+const port=process.env.PORT || 3000;
 
 
 
