@@ -30,6 +30,40 @@ var physicsUniversties=[
   "https://www.iiu.edu.pk"
   ]
   
+
+  var engineeringUniversties=[
+
+    "https://lums.edu.pk/programmes/bs-physics",
+    "www.nust.edu.pk",
+    "https://lahore.comsats.edu.pk",
+    "http://pu.edu.pk/",
+    "https://lahore.comsats.edu.pk",
+    "https://www.riphah.edu.pk",
+    "https://www.ucp.edu.pk",
+    "https://www.iiu.edu.pk"
+    ]
+    
+
+    var medicalUniversties=[
+
+  "https://www.rmur.edu.pk",
+  "https://kemu.edu.pk",  
+  "pu.edu.pk",
+  "https://gcuf.edu.pk/",
+  "https://aiou.edu.pk/",
+  "https://www.gcu.edu.pk",
+  "https://www.bzu.edu.pk"  
+  
+  
+  ]
+      
+
+
+
+
+
+
+
   var fashioUniversities=[
   "https://iqra.edu.pk",
   "https://admissions.umt.edu.pk",
@@ -413,6 +447,12 @@ if(customInterest===""){
 
 
   switch (interestType) {
+    case "Engineering":
+    quizResult(engineeringUniversties,pastPapers,userId);
+    break;
+    case "Medical":
+    quizResult(medicalUniversties,pastPapers,userId);
+    break;
     case "Politics":
       quizResult(politicsUniversities,pastPapers,userId);
       break;
@@ -457,7 +497,7 @@ if(customInterest===""){
 
 
   
-}else if(customInterest !== "Politics" && customInterest!=="Fashion Design" && customInterest!=="Computer" && customInterest!=="Physics"
+}else if(customInterest !== "Politics" && customInterest!=="Fashion Design" && customInterest!=="Computer"&& customInterest !=="Engineering" && customInterest!=="Medical"  && customInterest!=="Physics"
 
   && customInterest!=="Space" && customInterest!=="Maths" && customInterest!=="Mechanics"){
 
@@ -469,6 +509,12 @@ if(customInterest===""){
  }else {
 
   switch (interestType) {
+    case "Engineering":
+    quizResult(engineeringUniversties,pastPapers,userId);
+    break;
+    case "Medical":
+    quizResult(medicalUniversties,pastPapers,userId);
+    break;
     case "Politics":
       quizResult(politicsUniversities,pastPapers,userId);
       break;
@@ -584,6 +630,12 @@ if(customInterest===""){
 
 
   switch (interestType) {
+    case "Engineering":
+    quizResult(engineeringUniversties,pastPapers,userId);
+    break;
+    case "Medical":
+    quizResult(medicalUniversties,pastPapers,userId);
+    break;
     case "Politics":
       updateQuizResult(politicsUniversities,userId);
       break;
@@ -629,7 +681,7 @@ if(customInterest===""){
 
 
 
-}else if (customInterest !== "Politics" && customInterest!=="Fashion Design" && customInterest!=="Computer" && customInterest!=="Physics"
+}else if (customInterest !== "Politics" && customInterest!=="Fashion Design" && customInterest!=="Computer" && customInterest !=="Engineering" && customInterest!=="Medical" && customInterest!=="Physics"
 
 && customInterest!=="Space" && customInterest!=="Maths" && customInterest!=="Mechanics")  {
 
@@ -642,6 +694,13 @@ if(customInterest===""){
 
 
   switch (interestType) {
+    
+    case "Engineering":
+    quizResult(engineeringUniversties,pastPapers,userId);
+    break;
+    case "Medical":
+    quizResult(medicalUniversties,pastPapers,userId);
+    break;
     case "Politics":
       updateQuizResult(politicsUniversities,userId);
       break;
